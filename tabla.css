@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 80%;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.styled-table thead tr {
+    background-color: #007BFF;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #007BFF;
+}
+
+.styled-table a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.styled-table a:hover {
+    text-decoration: underline;
+}
+
+.icon-trash {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.error-message {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 80%;
+    background-color: #ffdddd;
+    color: #a80000;
+    border: 1px solid #a80000;
+    border-radius: 5px;
+}
+
+.btn-modifyM {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-modifyM:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+.btn-modifyD {
+    background-color: #c00404; 
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-modifyD:hover {
+    background-color: #a80000; /* Verde más oscuro */
+}
+
+/* tabla.css - Ejemplo de estilo para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+
+/* tabla.css - Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-modifyM, .btn-modifyD {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-modifyD {
+    background-color: #f44336;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}

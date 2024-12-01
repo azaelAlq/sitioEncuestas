@@ -1,0 +1,124 @@
+/* Reset básico para márgenes y padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.form-container.full-width {
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+}
+
+.form-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.radio-group input,
+.checkbox-group input {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  display: block;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px auto 0;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Responsividad */
+@media (max-width: 1200px) {
+  .form-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .form-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-container.full-width {
+    margin-top: 10px;
+  }
+}
+
+.readonly-input {
+  background-color: #f0f0f0; /* Fondo gris claro */
+  color: #808080; /* Color de texto gris */
+  border: 1px solid #ccc; /* Borde gris claro */
+  cursor: not-allowed; /* Cambiar el cursor para indicar que no es editable */
+}
